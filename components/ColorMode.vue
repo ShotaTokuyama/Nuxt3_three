@@ -4,10 +4,10 @@ const onClick = () => (colorMode.preference = (colorMode.value === 'light' ? 'da
 </script>
 
 <template>
-  <button aria-label="Color Mode" class="flex items-center space-x-3 py-2 px-4 bg-gray-200 rounded-md" @click="onClick">
-    <ColorScheme placeholder="...">
-      <Icon v-if="colorMode.value === 'dark'" name="heroicons-outline:moon" class="text-xl" />
-      <Icon v-else name="heroicons-outline:sun" class="text-xl" />
-    </ColorScheme>
+  <button aria-label="Color Mode"
+    class="bg-slate-500 hover:bg-slate-700 text-white font-bold rounded-full h-12 w-12 flex items-center justify-center"
+    @click="onClick">
+    <Icon v-if="colorMode.value === 'dark'" name="heroicons-outline:moon" class="text-2xl" />
+    <Icon v-else name="heroicons-outline:sun" class="text-2xl" />
   </button>
 </template>

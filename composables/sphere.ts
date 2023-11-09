@@ -14,7 +14,9 @@ export const useSphere = (container: Ref<HTMLElement>, clientWidth: Ref<number>,
     camera.position.set(20, 20, 20)
     camera.lookAt(new Vector3(0, 0, 0))
     // 球体作成
-    const geometry = new SphereGeometry(10, 32, 32)
+    // 球体サイズ
+    const geometry = new SphereGeometry(8, 24, 24)
+    // 球体カラー
     const material = new LineBasicMaterial({ color: 0xffffff, linewidth: 1 })
     const sphere = new Line(geometry, material)
     scene.add(sphere)
