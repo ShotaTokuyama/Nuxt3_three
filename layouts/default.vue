@@ -41,16 +41,9 @@ import { mdiHome, mdiFaceManProfile, mdiBriefcase, mdiLaptop } from '@mdi/js';
           <NuxtLink to="/skill">SKILL</NuxtLink>
         </div>
       </nav>
-      <ColorMode />
     </div>
     <main class="w-full h-screen p-10">
       <slot />
     </main>
   </div>
 </template>
-
-<style>
-body {
-  font-family: 'Poppins', sans-serif;
-}
-</style>
