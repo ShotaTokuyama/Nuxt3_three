@@ -1,6 +1,6 @@
 <script setup>
 import SvgIcon from '@jamescoyle/vue-icon';
-import { mdiHome, mdiFaceManProfile, mdiBriefcase, mdiLaptop } from '@mdi/js';
+import { mdiHome, mdiFaceManProfile, mdiLaptop, mdiGithub, mdiPost } from '@mdi/js';
 </script>
 <template>
   <div class="flex bg-black text-slate-200">
@@ -29,16 +29,16 @@ import { mdiHome, mdiFaceManProfile, mdiBriefcase, mdiLaptop } from '@mdi/js';
         <div role="button" tabindex="0"
           class="flex items-center w-full p-3 rounded-lg text-start text-slate-200 text-2xl leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-blue-50 active:bg-opacity-80 hover:text-blue-900 focus:text-blue-900 active:text-blue-900 outline-none">
           <div class="grid place-items-center mr-4">
-            <svg-icon type="mdi" :path="mdiBriefcase"></svg-icon>
+            <svg-icon type="mdi" :path="mdiGithub"></svg-icon>
           </div>
-          <NuxtLink to="/work">WORK</NuxtLink>
+          <a href="https://github.com/ShotaTokuyama" target="_blank">GitHub</a>
         </div>
         <div role="button" tabindex="0"
           class="flex items-center w-full p-3 rounded-lg text-start text-slate-200 text-2xl leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-blue-50 active:bg-opacity-80 hover:text-blue-900 focus:text-blue-900 active:text-blue-900 outline-none">
           <div class="grid place-items-center mr-4">
-            <svg-icon type="mdi" :path="mdiLaptop"></svg-icon>
+            <svg-icon type="mdi" :path="mdiPost"></svg-icon>
           </div>
-          <NuxtLink to="/skill">SKILL</NuxtLink>
+          <a href="https://qiita.com/ShotaTokuyama" target="_blank">Qiita</a>
         </div>
       </nav>
     </div>
